@@ -1,0 +1,85 @@
+#wholeCircle {
+    display: grid;
+    justify-content: center;
+    
+}
+
+.container {
+    background-color: black;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+}
+
+.circle {
+    grid-template-columns: 50% 50%   ;
+    grid-template-rows: 200px 200px; 
+    text-align: center;
+    justify-content: center;
+}
+
+/* .colorButton {
+    width: 150px;
+    height: 150px;
+} */
+
+#redButton {
+    background-color: red;
+    border-radius: 100% 0% 0% 0%;
+
+  /* HOVER OFF */
+   -webkit-transition: padding .1s;
+}
+#blueButton {
+    background-color: blue;
+    border-radius: 0% 100% 0% 0%;
+    -webkit-transition: padding .1s;
+}
+
+#yellowButton {
+    background-color: yellow;
+    border-radius: 0% 0% 0% 100%;
+    -webkit-transition: padding .1s;
+}
+
+#greenButton {
+    background-color: green;
+    border-radius: 0% 0% 100% 0%;
+    -webkit-transition: padding .1s;
+}
+
+#redButton:hover {
+    /* padding: 20px; */
+    border-radius: 90% 0% 0% 0%;
+    border-right: 50%;
+    
+    /* HOVER ON */
+    -webkit-transition: border-radius .1s;
+}
+
+#blueButton:hover {
+    /* padding: 20px; */
+    border-radius:  0% 90% 0% 0%;
+    border-right: 50%;
+ 
+   /* HOVER ON */
+    -webkit-transition: border-radius .1s;
+}
+
+#yellowButton:hover {
+    /* padding: 20px; */
+    border-radius: 0% 0% 0% 90%;
+    border-right: 50%;
+ 
+   /* HOVER ON */
+    -webkit-transition: border-radius .1s;
+}
+
+#greenButton:hover {
+    /* padding: 20px; */
+    border-radius: 0% 0% 90% 0%;
+    border-right: 50%;
+ 
+   /* HOVER ON */
+    -webkit-transition: border-radius .1s;
+}
