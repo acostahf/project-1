@@ -24,8 +24,7 @@
 
 ## Wireframe
 
-
-![image](https://wireframe.cc/pro/pp/31f7b8bb2286168)
+<img src="https://wireframe.cc/pro/pp/31f7b8bb2286168">
 
 ## Tech
 
