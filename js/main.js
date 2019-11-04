@@ -1,10 +1,14 @@
 // console.log('it works');
 
 
-let randomArry = Array.from({length: 100}, () => Math.floor(Math.random() * 4));
+let randomArry = Array.from({length: 10}, () => Math.floor(Math.random() * 4));
 let userArry = [];
-
 let randomColor = [];
+
+
+
+
+
 //---------------------------------------------------
 let box1 = document.getElementById('redButton');
 let box2 = document.getElementById('blueButton');
@@ -24,17 +28,17 @@ button.addEventListener('click', function (evt) {
     return userArry.push(evt.target)
 });
 
-randomArry.forEach(function(){
-    if(0 === 0) {
+randomArry.forEach(function(i){
+    if(i === 0) {
         randomColor.push('redButton')
     }
-    if(1 === 1) {
+    if(i === 1) {
         randomColor.push('blueButton')
     }
-    if(2 === 2) {
+    if(i === 2) {
         randomColor.push('yellowButton')
     }
-    if(3 === 3) {
+    if(i === 3) {
         randomColor.push('greenButton')
     }
     
@@ -44,6 +48,24 @@ randomArry.forEach(function(){
 
 
  //--------------------functions-------------------------------
-// for(let i = 0; i.length < 100; i++) {
-
+// let startGame = function () {
+//     for(let i = 0; randomColor.length < 100; i++) {
+//         if (0){
+//        console.log('d');}
+//     }
 // }
+
+// let startGame = () => {
+//     randomColor.forEach((i) => {
+        
+//     })
+// }
+
+
+// let compareFn = function () {
+//     if ('rebutton' === 'rebutton'){
+//         return true;
+//     }
+// }
+// startGame();
+// console.log(randomColor)
