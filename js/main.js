@@ -1,19 +1,18 @@
 // console.log('it works');
 
 
-let randomArry = Array.from({length: 10}, () => Math.floor(Math.random() * 4));
+let randomArry = Array.from({length: 5}, () => Math.floor(Math.random() * 4));
 let userArry = [];
 let randomColor = [];
 
 
 
 
-
 //---------------------------------------------------
-let box1 = document.getElementById('redButton');
-let box2 = document.getElementById('blueButton');
-let box3 = document.getElementById('yellowButton');
-let box4 = document.getElementById('greenButton');
+// let box1 = document.getElementById('redButton');
+// let box2 = document.getElementById('blueButton');
+// let box3 = document.getElementById('yellowButton');
+// let box4 = document.getElementById('greenButton');
 
 
 
@@ -25,7 +24,8 @@ let box4 = document.getElementById('greenButton');
 let button = document.querySelector('div');
 button.addEventListener('click', function (evt) {
     console.log(evt.target.id)
-    return userArry.push(evt.target)
+    return userArry.push(evt.target.id);
+    
 });
 
 randomArry.forEach(function(i){
@@ -45,6 +45,7 @@ randomArry.forEach(function(i){
 })
  console.log(randomColor);
 
+ 
 
 
  //--------------------functions-------------------------------
@@ -55,17 +56,19 @@ randomArry.forEach(function(i){
 //     }
 // }
 
-// let startGame = () => {
-//     randomColor.forEach((i) => {
-        
-//     })
-// }
+let checkFn = () => {
+    if(randomColor.length!==userArry.length) 
+    return "False"; 
+   else
+   { 
+   // comapring each element of array 
+    for(var i=0;i<randomColor.length;i++) 
+    if(randomColor[i]!==userArry[i]) 
+     return "False"; 
+     return "True"; 
+   } 
+ } 
+ var v = checkFn(); 
+ document.write(v); 
 
 
-// let compareFn = function () {
-//     if ('rebutton' === 'rebutton'){
-//         return true;
-//     }
-// }
-// startGame();
-// console.log(randomColor)
