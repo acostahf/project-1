@@ -9,10 +9,10 @@ let randomColor = [];
 
 
 //---------------------------------------------------
-let box1 = document.getElementById('redButton');
-let box2 = document.getElementById('blueButton');
-let box3 = document.getElementById('yellowButton');
-let box4 = document.getElementById('greenButton');
+// let box1 = document.getElementById('redButton');
+// let box2 = document.getElementById('blueButton');
+// let box3 = document.getElementById('yellowButton');
+// let box4 = document.getElementById('greenButton');
 
 
 
@@ -57,7 +57,7 @@ let checkFn = () => {
     return "False"; 
     else
     { 
-        for(var i=0;i<randomColor.length;i++) 
+        for(var i=0;i<randomColor.length;i ++ )
         if(randomColor[i]!==userArry[i]) 
         return "False"; 
         return "True"; 
@@ -70,11 +70,12 @@ function render () {
         return
     }else {
         alert('winner')
+
         randomArry.push( Math.floor(Math.random() * 4));
         userArry=[];
+        randomColor=[];
         something();
-        
-        return
+    
     }
     console.log(checkFn())
 }
@@ -82,7 +83,7 @@ function render () {
 function init () {
     something();
     userArry=[];
-    render();
+    
 }
 
 
