@@ -24,32 +24,33 @@
 } */
 
 #redButton {
-    background-color: red;
+    background-color: palevioletred;
     border-radius: 100% 0% 0% 0%;
 
   /* HOVER OFF */
    -webkit-transition: padding .1s;
 }
 #blueButton {
-    background-color: blue;
+    background-color: skyblue;
     border-radius: 0% 100% 0% 0%;
     -webkit-transition: padding .1s;
 }
 
 #yellowButton {
-    background-color: yellow;
+    background-color: khaki;
     border-radius: 0% 0% 0% 100%;
     -webkit-transition: padding .1s;
 }
 
 #greenButton {
-    background-color: green;
+    background-color: greenyellow;
     border-radius: 0% 0% 100% 0%;
     -webkit-transition: padding .1s;
 }
 
 #redButton:hover {
     /* padding: 20px; */
+    background-color: red;
     border-radius: 90% 0% 0% 0%;
     border-right: 50%;
     
@@ -59,6 +60,7 @@
 
 #blueButton:hover {
     /* padding: 20px; */
+    background-color: blue;
     border-radius:  0% 90% 0% 0%;
     border-right: 50%;
  
@@ -68,6 +70,7 @@
 
 #yellowButton:hover {
     /* padding: 20px; */
+    background-color: yellow;
     border-radius: 0% 0% 0% 90%;
     border-right: 50%;
  
@@ -77,6 +80,7 @@
 
 #greenButton:hover {
     /* padding: 20px; */
+    background-color: green;
     border-radius: 0% 0% 90% 0%;
     border-right: 50%;
  

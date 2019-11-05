@@ -9,10 +9,10 @@ let randomColor = [];
 
 
 //---------------------------------------------------
-// let box1 = document.getElementById('redButton');
-// let box2 = document.getElementById('blueButton');
-// let box3 = document.getElementById('yellowButton');
-// let box4 = document.getElementById('greenButton');
+let box1 = document.getElementById('redButton');
+let box2 = document.getElementById('blueButton');
+let box3 = document.getElementById('yellowButton');
+let box4 = document.getElementById('greenButton');
 
 
 
