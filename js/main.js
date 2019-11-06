@@ -9,16 +9,17 @@ let randomColor = [];
 
 
 //---------------------------------------------------
-// let box1 = document.getElementById('redButton');
-// let box2 = document.getElementById('blueButton');
-// let box3 = document.getElementById('yellowButton');
-// let box4 = document.getElementById('greenButton');
+let box1 = document.getElementById('redButton');
+let box2 = document.getElementById('blueButton');
+let box3 = document.getElementById('yellowButton');
+let box4 = document.getElementById('greenButton');
 
 
 
 
 
 //--------------------EvtListner-------------------------------
+document.getElementById('btn').addEventListener('click', init)
 
 
 let button = document.querySelector('div');
@@ -27,6 +28,8 @@ button.addEventListener('click', function (evt) {
     console.log(userArry);
     render();
 });
+
+
 
 function something () {
     randomArry.forEach(function(i){
@@ -42,7 +45,6 @@ function something () {
     if(i === 3) {
         randomColor.push('greenButton')
     }
-    
 })
 }
 
@@ -60,8 +62,7 @@ let checkFn = () => {
         for(var i=0;i<randomColor.length;i ++ )
         if(randomColor[i]!==userArry[i]) 
         return "False"; 
-        return "True"; 
-        
+        return "True";  
     } 
 } 
 
@@ -70,25 +71,39 @@ function render () {
         return
     }else {
         alert('winner')
-
         randomArry.push( Math.floor(Math.random() * 4));
         userArry=[];
         randomColor=[];
         something();
-    
+        chnColor();
     }
-    console.log(checkFn())
+    // console.log(checkFn())
 }
+
+function chnColor () {
+    randomArry.forEach(function(i){
+        if(i === 0) {
+            document.getElementById('redButton').style.backgroundColor = 'red';
+        }
+        else if(i === 1) {
+            document.getElementById('blueButton').style.backgroundColor = 'blue';
+        }
+        else if(i === 2) {
+            document.getElementById('yellowButton').style.backgroundColor = 'yellow';
+        }
+        else if(i === 3) {
+            document.getElementById('greenButton').style.backgroundColor = 'green';
+        }
+        // setInterval(change, 1000)
+    })
+    }
+// document.getElementById('redButton').style.backgroundColor = 'red';
 
 function init () {
     something();
     userArry=[];
-    
+    chnColor();
 }
+console.log(randomColor);
+// init();
 
-
-console.log(randomColor)
-
-
-
-init();
