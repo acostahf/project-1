@@ -9,6 +9,7 @@
     height: 500px;
     width: 500px;
     margin: auto;
+    border-radius: 10%;
 }
 
 .circle {
@@ -86,4 +87,18 @@
  
    /* HOVER ON */
     -webkit-transition: border-radius .1s;
+}
+
+#btn {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    border-radius: 10%;
+}
+
+#resetBtn {
+    width: 100px;
+    height: 50px;
+    margin: auto;
+    border-radius: 10%;
 }

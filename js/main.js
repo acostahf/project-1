@@ -67,9 +67,9 @@ let checkFn = () => {
 } 
 
 function render () {
-    if (checkFn() !== 'True'){
-        return
-    }else {
+    if (checkFn()=== 'False' && userArry.length >=randomColor.length){
+        alert('Loser')
+    }else if(checkFn()=== 'True'){
         alert('winner')
         randomArry.push( Math.floor(Math.random() * 4));
         userArry=[];
