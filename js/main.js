@@ -83,16 +83,16 @@ function render () {
 function chnColor () {
     randomArry.forEach(function(i){
         if(i === 0) {
-            document.getElementById('redButton').style.backgroundColor = 'red';
+            document.getElementById('redButton').style.backgroundColor = '#ff2600';
         }
         else if(i === 1) {
-            document.getElementById('blueButton').style.backgroundColor = 'blue';
+            document.getElementById('blueButton').style.backgroundColor = '#00d0ff';
         }
         else if(i === 2) {
-            document.getElementById('yellowButton').style.backgroundColor = 'yellow';
+            document.getElementById('yellowButton').style.backgroundColor = '#eaff00';
         }
         else if(i === 3) {
-            document.getElementById('greenButton').style.backgroundColor = 'green';
+            document.getElementById('greenButton').style.backgroundColor = '#04ff00';
         }
         // setInterval(change, 1000)
     })

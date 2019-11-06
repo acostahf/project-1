@@ -24,33 +24,33 @@
 } */
 
 #redButton {
-    background-color: palevioletred;
+    background-color: #cc321b;
     border-radius: 100% 0% 0% 0%;
 
   /* HOVER OFF */
    -webkit-transition: padding .1s;
 }
 #blueButton {
-    background-color: skyblue;
+    background-color: #1bcccc;
     border-radius: 0% 100% 0% 0%;
     -webkit-transition: padding .1s;
 }
 
 #yellowButton {
-    background-color: khaki;
+    background-color: #ccc91b;
     border-radius: 0% 0% 0% 100%;
     -webkit-transition: padding .1s;
 }
 
 #greenButton {
-    background-color: greenyellow;
+    background-color: #1bcc38;
     border-radius: 0% 0% 100% 0%;
     -webkit-transition: padding .1s;
 }
 
 #redButton:hover {
     /* padding: 20px; */
-    background-color: red;
+    background-color: #ff2600;
     border-radius: 90% 0% 0% 0%;
     border-right: 50%;
     
@@ -60,7 +60,7 @@
 
 #blueButton:hover {
     /* padding: 20px; */
-    background-color: blue;
+    background-color: #00d0ff ;
     border-radius:  0% 90% 0% 0%;
     border-right: 50%;
  
@@ -70,7 +70,7 @@
 
 #yellowButton:hover {
     /* padding: 20px; */
-    background-color: yellow;
+    background-color: #eaff00;
     border-radius: 0% 0% 0% 90%;
     border-right: 50%;
  
@@ -80,7 +80,7 @@
 
 #greenButton:hover {
     /* padding: 20px; */
-    background-color: green;
+    background-color: #04ff00;
     border-radius: 0% 0% 90% 0%;
     border-right: 50%;
  
