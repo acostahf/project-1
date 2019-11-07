@@ -1,7 +1,6 @@
 // console.log('it works');
 
-
-let randomArry = Array.from({length: 1}, () => Math.floor(Math.random() * 4));
+let randomArry=[];
 let userArry = [];
 let randomColor = [];
 
@@ -20,6 +19,7 @@ let box4 = document.getElementById('greenButton');
 
 //--------------------EvtListner-------------------------------
 document.getElementById('btn').addEventListener('click', init)
+document.getElementById('resetBtn').addEventListener('click', reset)
 
 
 let button = document.querySelector('div');
@@ -29,30 +29,78 @@ button.addEventListener('click', function (evt) {
     render();
 });
 
+//--------------------functions-------------------------------
 
-
-function something () {
+// setInterval(() => {
+//     changeColor();
+// }, 2000);
+function coverter () {
     randomArry.forEach(function(i){
     if(i === 0) {
-        randomColor.push('redButton')
+        randomColor.push('redButton');
     }
     if(i === 1) {
-        randomColor.push('blueButton')
+       
+        randomColor.push('blueButton');
     }
     if(i === 2) {
-        randomColor.push('yellowButton')
+     
+        randomColor.push('yellowButton');
     }
     if(i === 3) {
-        randomColor.push('greenButton')
+      
+        randomColor.push('greenButton');
     }
 })
 }
 
+function changeColor () {
+    randomArry.forEach(function(i){
+    let interval = setInterval(function(){ 
+        
+    if(i === 0) {
+        setTimeout(function() {
+            document.getElementById('redButton').style.backgroundColor = '#ff2600';}, 1000)
+        setTimeout(function() {
+            document.getElementById('redButton').style.backgroundColor = '#cc321b';},2000)
+            clearInterval(interval);
+    }
+    if(i === 1) {
+        setTimeout(function() { 
+            document.getElementById('blueButton').style.backgroundColor = '#00d0ff';}, 1000)
+        setTimeout(function() {
+            document.getElementById('blueButton').style.backgroundColor = '#1bcccc';},2000)
+            clearInterval(interval);
+    }
+    if(i === 2) {
+        setTimeout(function() {
+            document.getElementById('yellowButton').style.backgroundColor = '#eaff00';}, 1000)
+        setTimeout(function() {
+            document.getElementById('yellowButton').style.backgroundColor = '#ccc91b';},2000)
+            clearInterval(interval);
+    }
+    if(i === 3) {
+        setTimeout(function() {
+            document.getElementById('greenButton').style.backgroundColor = '#04ff00';}, 1000)
+        setTimeout(function() {
+            document.getElementById('greenButton').style.backgroundColor = '#1bcc38';},2000)
+            clearInterval(interval);
+        }
+    },1000)
+    
+})
+}
 
+// let offset = 0;
 
-
-//--------------------functions-------------------------------
-
+// setTimeout(function() {
+//     randomColor.forEach(function() {
+//       setTimeout(function() {
+//         changeColor();
+//       }, 1000 + offset);
+//       offset += 1000;
+//     });
+//   }, 1000);
 
 let checkFn = () => {
     if(randomColor.length!==userArry.length) 
@@ -68,42 +116,43 @@ let checkFn = () => {
 
 function render () {
     if (checkFn()=== 'False' && userArry.length >=randomColor.length){
-        alert('Loser')
+        console.log('Loser')
     }else if(checkFn()=== 'True'){
-        alert('winner')
+        console.log('winner')
         randomArry.push( Math.floor(Math.random() * 4));
         userArry=[];
         randomColor=[];
-        something();
-        chnColor();
-    }
-    // console.log(checkFn())
-}
+        coverter();
+        changeColor();
 
-function chnColor () {
-    randomArry.forEach(function(i){
-        if(i === 0) {
-            document.getElementById('redButton').style.backgroundColor = '#ff2600';
-        }
-        else if(i === 1) {
-            document.getElementById('blueButton').style.backgroundColor = '#00d0ff';
-        }
-        else if(i === 2) {
-            document.getElementById('yellowButton').style.backgroundColor = '#eaff00';
-        }
-        else if(i === 3) {
-            document.getElementById('greenButton').style.backgroundColor = '#04ff00';
-        }
-        // setInterval(change, 1000)
-    })
     }
-// document.getElementById('redButton').style.backgroundColor = 'red';
+}
+//     let offset = 0;
+
+//     setTimeout(function() {
+//         randomColor.forEach(function() {
+//           setTimeout(function() {
+//             changeColor();
+//           }, 3000 + offset);
+//           offset += 3000;
+//         });
+//       }, 3000);
+// }
 
 function init () {
-    something();
     userArry=[];
-    chnColor();
+    randomArry = Array.from({length: 1}, () => Math.floor(Math.random() * 4));
+    randomColor=[];
+    coverter();
+    changeColor();
+  
 }
+
+function reset () {
+    console.log('works')
+}
+
+
 console.log(randomColor);
 // init();
 
