@@ -12,8 +12,8 @@
 
 ## User stories
 1. As a user I want to start the game with a button
-2. As a user I want the color button to light up and make a sound that is unquie to that button.
-3. As a user I want to be able to press the button and let me know with a sound that 4. the right button was click
+2. As a user I want the color button to light up.
+3. As a user I want to be able to press the button.
 4. As a user I want a sound to let me know if i press the wrong button 
 5. As a user if the button I press was correct I want the game to wait a few seconds to start again.
 6. As a user when the game starts again I want it to start from the first button and add one more button for everytime the game starts if I keep guessing correct.
@@ -24,7 +24,7 @@
 
 ## Wireframe
 
-![link](https://wireframe.cc/pro/pp/31f7b8bb2286168)
+![link(https://wireframe.cc/pro/pp/31f7b8bb2286168)]
 
 ## Tech
 

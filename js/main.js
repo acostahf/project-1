@@ -49,7 +49,7 @@ function changeColor() {
         boxR.style.backgroundColor = "#ff2600";
       }, on * index);
       setTimeout(function() {
-        boxR.style.backgroundColor = "#cc321b";
+        boxR.style.backgroundColor = "#6b0000";
       }, on * index + 250);
     }
     if (num === 1) {
@@ -57,7 +57,7 @@ function changeColor() {
         boxB.style.backgroundColor = "#00d0ff";
       }, on * index);
       setTimeout(function() {
-        boxB.style.backgroundColor = "#1bcccc";
+        boxB.style.backgroundColor = "#00034f";
       }, on * index + 250);
     }
     if (num === 2) {
@@ -67,7 +67,7 @@ function changeColor() {
       }, on * index);
       setTimeout(function() {
         boxY.style.backgroundColor =
-          "#ccc91b";
+          "#9e9600";
       }, on * index + 250);
     }
     if (num === 3) {
@@ -77,7 +77,7 @@ function changeColor() {
       }, on * index);
       setTimeout(function() {
         boxG.style.backgroundColor =
-          "#1bcc38";
+          "#00780c";
       }, on * index + 250);
     }
   });

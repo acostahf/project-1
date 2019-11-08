@@ -33,7 +33,7 @@ body {
 
 #redButton {
     border: solid 10px black;
-    background-color: #cc321b;
+    background-color: #6b0000;
     border-radius: 100% 0% 0% 0%;
     
 
@@ -42,21 +42,21 @@ body {
 }
 #blueButton {
     border: solid 10px black;
-    background-color: #1bcccc;
+    background-color: #00034f;
     border-radius: 0% 100% 0% 0%;
     -webkit-transition: padding .1s;
 }
 
 #yellowButton {
     border: solid 10px black;
-    background-color: #ccc91b;
+    background-color: #9e9600;
     border-radius: 0% 0% 0% 100%;
     -webkit-transition: padding .1s;
 }
 
 #greenButton {
     border: solid 10px black;
-    background-color: #1bcc38;
+    background-color: #00780c;
     border-radius: 0% 0% 100% 0%;
     -webkit-transition: padding .1s;
 }
