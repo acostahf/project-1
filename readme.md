@@ -24,8 +24,8 @@
 
 ## Wireframe
 
-[Imgur](https://i.imgur.com/ctTyGZI.png)
-[Imgur](https://i.imgur.com/Q3JXMLm.png)
+<a href="https://imgur.com/ctTyGZI"><img src="https://i.imgur.com/ctTyGZI.png" title="source: imgur.com" /></a>
+<a href="https://imgur.com/Q3JXMLm"><img src="https://i.imgur.com/Q3JXMLm.png" title="source: imgur.com" /></a>
 ## Tech
 
 <li>HTML</li>

@@ -85,12 +85,12 @@ function compturn() {
     for (let i = 0; i < randomColor.length; i++) {
       setTimeout(async function() {
         await changeColor();
-      }, 1000); // setTimeout returns and ID
+      }, 500); // setTimeout returns and ID
       if (i + 1 === randomColor.length) {
         clearInterval(interval);
       }
     }
-  }, 1000);
+  },500 );
 }
 
 let checkFn = () => {
@@ -105,7 +105,7 @@ let checkFn = () => {
 
 function render() {
     if (checkFn()=== 'False' && userArry.length >=randomColor.length) {
-        document.getElementById('round').innerHTML = `Lasted ${randomColor.length+1} rounds`
+        document.getElementById('round').innerHTML = `Lasted ${randomColor.length} rounds`
     } else if (checkFn() === "True") {
         document.getElementById('round').innerHTML = `Round ${randomColor.length+1}`
     randomArry.push(Math.floor(Math.random() * 4));
@@ -122,6 +122,7 @@ function init() {
   randomColor = [];
   converter();
   compturn();
+  document.getElementById('round').innerHTML = `Round ${randomColor.length}`
 }
 
 
