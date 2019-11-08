@@ -8,13 +8,7 @@ body {
     background-color: #37004f;
   }
 
-/* .container {
-    background-color: black;
-    height: 500px;
-    width: 500px;
-    margin: auto;
-    border-radius: 10%;
-} */
+
 
 .circle {
     background-color: grey;
@@ -26,10 +20,7 @@ body {
     margin: 0% 25% 0% 25% ;
 }
 
-/* .colorButton {
-    width: 150px;
-    height: 150px;
-} */
+
 
 #redButton {
     border: solid 10px black;
@@ -109,12 +100,6 @@ body {
     border-radius: 10%;
 }
 
-    /* #resetBtn {
-        width: 100px;
-        height: 50px;
-        margin: auto;
-        border-radius: 10%;
-    } */
 
 #game {
     color: whitesmoke;

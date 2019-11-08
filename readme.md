@@ -24,8 +24,8 @@
 
 ## Wireframe
 
-![link(https://wireframe.cc/pro/pp/31f7b8bb2286168)]
-
+[Imgur](https://i.imgur.com/ctTyGZI.png)
+[Imgur](https://i.imgur.com/Q3JXMLm.png)
 ## Tech
 
 <li>HTML</li>

@@ -86,10 +86,6 @@ function compturn() {
       setTimeout(async function() {
         await changeColor();
       }, 1000); // setTimeout returns and ID
-    //   console.log(
-        // document.getElementById('round').innerHTML = 
-        // `Round ${randomArry[index]}`
-    //   );
       if (i + 1 === randomColor.length) {
         clearInterval(interval);
       }
@@ -128,9 +124,6 @@ function init() {
   compturn();
 }
 
-// function reset() {
-//   console.log("works");
-// }
+
 
 console.log(randomColor);
-// init();
