@@ -127,3 +127,31 @@ body {
     text-align: center  ;
     justify-content: center;
 }
+
+#activeR{
+    border: solid 10px black;
+    background-color: #ff2600;
+    border-radius: 90% 0% 0% 0%;
+    border-right: 50%;
+}
+
+#activeB{
+    border: solid 10px black;
+    background-color: #00d0ff;
+    border-radius:  0% 90% 0% 0%;
+    border-right: 50%;
+}
+
+#activeY{
+    border: solid 10px black;
+    background-color: #eaff00;
+    border-radius: 0% 0% 0% 90%;
+    border-right: 50%;
+}
+
+#activeG{
+    border: solid 10px black;
+    background-color: #04ff00;
+    border-radius: 0% 0% 90% 0%;
+    border-right: 50%;
+}

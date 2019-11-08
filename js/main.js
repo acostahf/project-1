@@ -46,38 +46,34 @@ function changeColor() {
     index += 1;
     if (num === 0) {
       setTimeout(function() {
-        boxR.style.backgroundColor = "#ff2600";
+        boxR.id = 'activeR';
       }, on * index);
       setTimeout(function() {
-        boxR.style.backgroundColor = "#6b0000";
+        boxR.id = 'redButton';
       }, on * index + 250);
     }
     if (num === 1) {
       setTimeout(function() {
-        boxB.style.backgroundColor = "#00d0ff";
+        boxB.id = 'activeB';
       }, on * index);
       setTimeout(function() {
-        boxB.style.backgroundColor = "#00034f";
+        boxB.id = 'blueButton';
       }, on * index + 250);
     }
     if (num === 2) {
       setTimeout(function() {
-        boxY.style.backgroundColor =
-          "#eaff00";
+        boxY.id = 'activeY';
       }, on * index);
       setTimeout(function() {
-        boxY.style.backgroundColor =
-          "#9e9600";
+        boxY.id = 'yellowButton';
       }, on * index + 250);
     }
     if (num === 3) {
       setTimeout(function() {
-        boxG.style.backgroundColor =
-          "#04ff00";
+        boxG.id = 'activeG';
       }, on * index);
       setTimeout(function() {
-        boxG.style.backgroundColor =
-          "#00780c";
+        boxG.id = 'greenButton';
       }, on * index + 250);
     }
   });
