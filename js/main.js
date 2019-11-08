@@ -104,8 +104,8 @@ let checkFn = () => {
 };
 
 function render() {
-    if (checkFn() === "False" || userArry.length !== randomColor.length  ) {
-        console.log("Loser");
+    if (checkFn()=== 'False' && userArry.length >=randomColor.length) {
+        document.getElementById('round').innerHTML = `Lasted ${randomColor.length+1} rounds`
     } else if (checkFn() === "True") {
         document.getElementById('round').innerHTML = `Round ${randomColor.length+1}`
     randomArry.push(Math.floor(Math.random() * 4));

@@ -31,3 +31,8 @@
 <li>HTML</li>
 <li>Javascript</li>
 <li>CSS</li>
+
+## Strech Goals
+1. add sound
+2. fix the loser functin
+3. add a strict button
