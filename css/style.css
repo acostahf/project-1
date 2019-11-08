@@ -4,19 +4,26 @@
     
 }
 
-.container {
+body {
+    background-color: #37004f;
+  }
+
+/* .container {
     background-color: black;
     height: 500px;
     width: 500px;
     margin: auto;
     border-radius: 10%;
-}
+} */
 
 .circle {
+    background-color: grey;
+    border-radius: 50%;
     grid-template-columns: 50% 50%   ;
     grid-template-rows: 200px 200px; 
     text-align: center;
     justify-content: center;
+    margin: 0% 25% 0% 25% ;
 }
 
 /* .colorButton {
@@ -25,25 +32,30 @@
 } */
 
 #redButton {
+    border: solid 10px black;
     background-color: #cc321b;
     border-radius: 100% 0% 0% 0%;
+    
 
   /* HOVER OFF */
    -webkit-transition: padding .1s;
 }
 #blueButton {
+    border: solid 10px black;
     background-color: #1bcccc;
     border-radius: 0% 100% 0% 0%;
     -webkit-transition: padding .1s;
 }
 
 #yellowButton {
+    border: solid 10px black;
     background-color: #ccc91b;
     border-radius: 0% 0% 0% 100%;
     -webkit-transition: padding .1s;
 }
 
 #greenButton {
+    border: solid 10px black;
     background-color: #1bcc38;
     border-radius: 0% 0% 100% 0%;
     -webkit-transition: padding .1s;
@@ -90,15 +102,28 @@
 }
 
 #btn {
+    padding: 0;
     width: 100px;
     height: 50px;
-    margin: auto;
+    margin: 0% 0% 0% 46%;
     border-radius: 10%;
 }
 
-#resetBtn {
-    width: 100px;
-    height: 50px;
-    margin: auto;
-    border-radius: 10%;
+    /* #resetBtn {
+        width: 100px;
+        height: 50px;
+        margin: auto;
+        border-radius: 10%;
+    } */
+
+#game {
+    color: whitesmoke;
+    text-align: center  ;
+    justify-content: center;
+}
+
+#round {
+    color: whitesmoke;
+    text-align: center  ;
+    justify-content: center;
 }

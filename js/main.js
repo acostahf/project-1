@@ -1,18 +1,18 @@
-// console.log('it works');
+
 
 let randomArry = [];
 let userArry = [];
 let randomColor = [];
 
 //---------------------------------------------------
-let box1 = document.getElementById("redButton");
-let box2 = document.getElementById("blueButton");
-let box3 = document.getElementById("yellowButton");
-let box4 = document.getElementById("greenButton");
+let boxR = document.getElementById("redButton");
+let boxB = document.getElementById("blueButton");
+let boxY = document.getElementById("yellowButton");
+let boxG = document.getElementById("greenButton");
 
 //--------------------EvtListner-------------------------------
 document.getElementById("btn").addEventListener("click", init);
-document.getElementById("resetBtn").addEventListener("click", reset);
+// document.getElementById("resetBtn").addEventListener("click", reset);
 
 let button = document.querySelector("div");
 button.addEventListener("click", function(evt) {
@@ -22,11 +22,7 @@ button.addEventListener("click", function(evt) {
 });
 
 //--------------------functions-------------------------------
-
-// setInterval(() => {
-//     changeColor();
-// }, 2000);
-function coverter() {
+function converter() {
   randomArry.forEach(function(i) {
     if (i === 0) {
       randomColor.push("redButton");
@@ -42,47 +38,45 @@ function coverter() {
     }
   });
 }
-// the lights turn off and on but not in order and the hover effect in css stops on the ones that are in the array
+
 
 function changeColor() {
-  console.log("running change color");
   let on = 500;
-  let off = 1000;
   randomArry.forEach(function(num, index) {
     index += 1;
     if (num === 0) {
       setTimeout(function() {
-        document.getElementById("redButton").style.backgroundColor = "#ff2600";
+        boxR.style.backgroundColor = "#ff2600";
       }, on * index);
       setTimeout(function() {
-        document.getElementById("redButton").style.backgroundColor = "#cc321b";
+        boxR.style.backgroundColor = "#cc321b";
       }, on * index + 250);
     }
     if (num === 1) {
       setTimeout(function() {
-        document.getElementById("blueButton").style.backgroundColor = "#00d0ff";
+        boxB.style.backgroundColor = "#00d0ff";
       }, on * index);
       setTimeout(function() {
-        document.getElementById("blueButton").style.backgroundColor = "#1bcccc";
+        boxB.style.backgroundColor = "#1bcccc";
       }, on * index + 250);
     }
     if (num === 2) {
       setTimeout(function() {
-        document.getElementById("yellowButton").style.backgroundColor =
+        boxY.style.backgroundColor =
           "#eaff00";
       }, on * index);
       setTimeout(function() {
-        document.getElementById("yellowButton").style.backgroundColor =
+        boxY.style.backgroundColor =
           "#ccc91b";
       }, on * index + 250);
     }
     if (num === 3) {
       setTimeout(function() {
-        document.getElementById("greenButton").style.backgroundColor =
+        boxG.style.backgroundColor =
           "#04ff00";
       }, on * index);
       setTimeout(function() {
-        document.getElementById("greenButton").style.backgroundColor =
+        boxG.style.backgroundColor =
           "#1bcc38";
       }, on * index + 250);
     }
@@ -93,42 +87,39 @@ function changeColor() {
 function compturn() {
   let interval = setInterval(function() {
     for (let i = 0; i < randomColor.length; i++) {
-      //should increment by one
-      console.log("party", randomColor[i]);
       setTimeout(async function() {
-        console.log("on");
         await changeColor();
-      }, 3000); // setTimeout returns and ID
-      // changeColor();
-      //   await clearTimeout(time);
-      console.log(
-        `wayne ::: i =${i} randomColor = ${Array.isArray(randomColor)}`
-      );
+      }, 1000); // setTimeout returns and ID
+    //   console.log(
+        // document.getElementById('round').innerHTML = 
+        // `Round ${randomArry[index]}`
+    //   );
       if (i + 1 === randomColor.length) {
         clearInterval(interval);
       }
     }
-  }, 3000);
+  }, 1000);
 }
 
 let checkFn = () => {
   if (randomColor.length !== userArry.length) return "False";
   else {
     for (var i = 0; i < randomColor.length; i++)
-      if (randomColor[i] !== userArry[i]) return "False";
-    return "True";
-  }
+      if (randomColor[i] !== userArry[i]) return "False"
+      document.getElementById('round').innerHTML = `Round lose`;
+      return "True";
+    }
 };
 
 function render() {
-  if (checkFn() === "False" && userArry.length >= randomColor.length) {
-    console.log("Loser");
-  } else if (checkFn() === "True") {
-    console.log("winner");
+    if (checkFn() === "False" || userArry.length !== randomColor.length  ) {
+        console.log("Loser");
+    } else if (checkFn() === "True") {
+        document.getElementById('round').innerHTML = `Round ${randomColor.length+1}`
     randomArry.push(Math.floor(Math.random() * 4));
     userArry = [];
     randomColor = [];
-    coverter();
+    converter();
     compturn();
   }
 }
@@ -137,13 +128,13 @@ function init() {
   userArry = [];
   randomArry = Array.from({ length: 1 }, () => Math.floor(Math.random() * 4));
   randomColor = [];
-  coverter();
+  converter();
   compturn();
 }
 
-function reset() {
-  console.log("works");
-}
+// function reset() {
+//   console.log("works");
+// }
 
 console.log(randomColor);
 // init();
